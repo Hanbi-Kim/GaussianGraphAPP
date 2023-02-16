@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>904</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="fileAddButton">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>8</y>
+      <width>145</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>파일 추가</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="dfListWidget">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>88</y>
+      <width>137</width>
+      <height>225</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>64</y>
+      <width>129</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>분석에 사용할 파일 선택</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>328</y>
+      <width>129</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>분석에 사용할 컬럼 선택</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="colListWidget">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>352</y>
+      <width>137</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tsButton">
+    <property name="geometry">
+     <rect>
+      <x>672</x>
+      <y>0</y>
+      <width>121</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>시계열 그래프</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gsButton">
+    <property name="geometry">
+     <rect>
+      <x>672</x>
+      <y>48</y>
+      <width>121</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>가우시안 그래프</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="xplainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>8</y>
+      <width>217</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>X축에 표시될 레이블을 작성해주세요. </string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="yplainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>48</y>
+      <width>217</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>Y축에 표시될 레이블을 작성해주세요. </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>784</x>
+      <y>0</y>
+      <width>121</width>
+      <height>97</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>저장</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Image">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>120</y>
+      <width>737</width>
+      <height>409</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>392</x>
+      <y>40</y>
+      <width>209</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>608</x>
+      <y>40</y>
+      <width>57</width>
+      <height>33</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>16</y>
+      <width>129</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>폰트 스타일 / 사이즈</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>696</x>
+      <y>536</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-10000.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>10000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>536</y>
+      <width>89</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-9999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>10000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>544</x>
+      <y>536</y>
+      <width>145</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X축 범위 설정 (0,0)=자동</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+    <property name="geometry">
+     <rect>
+      <x>336</x>
+      <y>536</y>
+      <width>97</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-1000000.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>10000000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>536</y>
+      <width>89</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-100000.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1000000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>184</x>
+      <y>536</y>
+      <width>145</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y축 범위 설정 (0,0)=자동</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>904</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>가우시안 그래프</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
